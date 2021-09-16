@@ -1,0 +1,898 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.principal {
+  background-image: url("images/pic_1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #d8d8d8;
+  max-width: 100%;
+  height: 1100px;
+}
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.header-logo {
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.navbar-menu {
+  float: right;
+}
+
+.nav {
+  padding-top: 2rem;
+  margin: 0;
+}
+
+.nav .nav-item {
+  letter-spacing: 0.02rem;
+}
+
+.nav .nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.nav .nav-link:hover {
+  transition: 0.5s;
+  color: #c271ff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-title .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 100px;
+  padding-top: 10rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+
+.main-subtitle {
+  display: flex;
+  justify-content: center;
+}
+
+.main-subtitle .subtitle {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0 2rem 0 2rem;
+  text-transform: uppercase;
+}
+
+.main-button {
+  display: flex;
+  justify-content: center;
+}
+
+.main-button .button {
+  width: 180px;
+  height: 40px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  background-color: #c271ff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 2rem 0 12rem 0;
+  outline: none;
+}
+
+.main-button .button:hover {
+  opacity: 0.9;
+}
+
+.main-information {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 4rem 0;
+}
+
+.main-information .span-information {
+  color: #c271ff;
+}
+
+.main-information .information {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.main-pros {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-pros img {
+  border-radius: 50%;
+}
+
+[class*="pro-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.main-pros .name {
+  font-weight: 900;
+  font-size: 18px;
+  padding-top: 15px;
+}
+
+.main-pros .award-information {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .principal {
+    height: 1390px;
+  }
+
+  #smile {
+    margin: 1rem 0 0 15rem;
+  }
+
+  #logo {
+    margin: 1rem 0 0 10rem;
+  }
+  .navbar-menu {
+    flex: 1;
+  }
+
+  .nav {
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .main-title .title {
+    font-size: 60px;
+    padding-top: 17rem;
+  }
+
+  .main-pros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  [class*="pro-"] {
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+/* Carousel of quotes Section
+    ============================ */
+
+.carousel-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #c271ff;
+  max-width: 100%;
+  height: 390px;
+  color: #ffffff;
+}
+
+.carousel-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-items img {
+  border-radius: 50%;
+  margin: 8rem 2rem 0 0;
+}
+
+.information-items {
+  width: 550px;
+  margin-top: 8rem;
+}
+
+.carousel-items .carousel-information {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.carousel-items .carousel-name {
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+}
+
+.carousel-items .name-information {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  margin: 0;
+}
+
+.holberton_school-icon-arrow_3,
+.holberton_school-icon-arrow_4 {
+  font-size: 95px;
+}
+
+@media only screen and (max-width: 768px) {
+  .information-items {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carousel-items img {
+    margin: 2rem 2rem 0 0;
+  }
+
+  .information-items {
+    width: 250px;
+    margin-top: 1rem;
+  }
+
+  .holberton_school-icon-arrow_3,
+  .holberton_school-icon-arrow_4 {
+    padding-bottom: 10rem;
+  }
+}
+
+/* Most popular tutorials
+        ============================ */
+
+.most-popular-tutorials .title {
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+  margin: 5rem 0 5rem 0;
+}
+
+.most-popular-tutorials .title span {
+  color: #c271ff;
+}
+
+.most-popular-tutorials .carousel-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #ffffff;
+  max-width: 100%;
+  height: 390px;
+  color: #ffffff;
+}
+
+.most-popular-tutorials .carousel-items img {
+  border-radius: 5px;
+  margin: 0;
+}
+
+.most-popular-tutorials #play-tuto1 {
+  position: absolute;
+  top: 2.5rem;
+  left: 13rem;
+}
+
+.most-popular-tutorials #play-tuto2 {
+  position: absolute;
+  top: 2.5rem;
+  left: 28.5rem;
+}
+
+.most-popular-tutorials #play-tuto3 {
+  position: absolute;
+  top: 2.5rem;
+  left: 44rem;
+}
+
+.most-popular-tutorials #play-tuto4 {
+  position: absolute;
+  top: 2.5rem;
+  left: 60rem;
+}
+
+.most-popular-tutorials .holberton_school-icon-arrow_3,
+.most-popular-tutorials .holberton_school-icon-arrow_4 {
+  padding-bottom: 10rem;
+  color: black;
+}
+
+.carousel-items .tuto-1 {
+  color: black;
+  width: 250px;
+}
+
+.carousel-items .tuto-2 {
+  color: black;
+  width: 250px;
+}
+
+.carousel-items .tuto-3 {
+  color: black;
+  width: 250px;
+}
+
+.carousel-items .tuto-4 {
+  color: black;
+  width: 250px;
+}
+
+.title-tuto {
+  font-size: 14px;
+  padding-top: 1rem;
+}
+
+.description-tuto {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  color: #c271ff;
+}
+
+.rating #profile {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.rating #star {
+  margin: 15px 3px 15px 3px;
+}
+
+.rating .name-rating {
+  font-size: 12px;
+  margin-right: 7rem;
+}
+
+.time {
+  font-size: 12px;
+  margin: 12px 0 0 90px;
+}
+
+/* Free membership
+        ============================ */
+
+.free-membership {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #071629;
+  max-width: 100%;
+  height: 500px;
+  color: #ffffff;
+}
+
+.title-membership span {
+  color: #c271ff;
+}
+
+.section-header .title-membership {
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+}
+
+.section-body {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+[class*="dot-"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 4rem 0 4rem;
+}
+
+.title-dot {
+  font-weight: 600;
+  margin: 1rem 0 1rem 0;
+}
+
+.subtitle-dot {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.membership-button {
+  display: flex;
+  justify-content: center;
+}
+
+.membership-button .button {
+  width: 180px;
+  height: 40px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  background-color: #c271ff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+  outline: none;
+}
+
+.membership-button .button:hover {
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 1120px) {
+  .free-membership {
+    height: 750px;
+  }
+
+  .membership-button .button {
+    margin: 5rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .free-membership {
+    height: 750px;
+  }
+
+  .membership-button .button {
+    margin: 5rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .free-membership {
+    height: 1200px;
+  }
+
+  .membership-button .button {
+    margin: 6rem 0 0 0;
+  }
+}
+
+/* Latest videos
+        ============================ */
+
+.latest-videos .title {
+  text-align: center;
+  font-weight: 200;
+  font-size: 32px;
+  margin: 5rem 0 5rem 0;
+}
+
+.latest-videos .title span {
+  color: #c271ff;
+}
+
+.latest-videos .carousel-item {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #ffffff;
+  max-width: 100%;
+  height: 390px;
+  color: #ffffff;
+}
+
+.latest-videos .carousel-items img {
+  border-radius: 5px;
+  margin: 0;
+}
+
+.latest-videos #play-tuto5 {
+  position: absolute;
+  top: 3rem;
+  left: 13rem;
+}
+
+.latest-videos #play-tuto6 {
+  position: absolute;
+  top: 2.5rem;
+  left: 28.5rem;
+}
+
+.latest-videos #play-tuto7 {
+  position: absolute;
+  top: 2.5rem;
+  left: 44rem;
+}
+
+.latest-videos #play-tuto8 {
+  position: absolute;
+  top: 2.5rem;
+  left: 60rem;
+}
+
+.latest-videos .holberton_school-icon-arrow_3,
+.latest-videos .holberton_school-icon-arrow_4 {
+  padding-bottom: 10rem;
+  color: black;
+}
+
+.carousel-items .latest-tuto-1 {
+  color: black;
+  width: 250px;
+}
+
+.carousel-items .latest-tuto-2 {
+  color: black;
+  width: 250px;
+}
+
+.carousel-items .latest-tuto-3 {
+  color: black;
+  width: 250px;
+}
+
+.carousel-items .latest-tuto-4 {
+  color: black;
+  width: 250px;
+}
+
+.latest-title-tuto {
+  font-size: 14px;
+  padding-top: 1rem;
+}
+
+.latest-description-tuto {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.latest-rating {
+  display: flex;
+  flex-wrap: wrap;
+  color: #c271ff;
+}
+
+.latest-rating #latest-profile {
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.latest-rating #latest-star {
+  margin: 15px 3px 15px 3px;
+}
+
+.latest-rating .latest-name-rating {
+  font-size: 12px;
+  margin-right: 7rem;
+}
+
+.latest-time {
+  font-size: 12px;
+  margin: 12px 0 0 90px;
+}
+
+/* Latest videos
+        ============================ */
+
+.footer-container {
+  background: #071629;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  color: var(--color-primary);
+  max-width: 100%;
+  height: 200px;
+}
+
+.footer-container .section-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-container .footer-logo {
+  padding-top: 6rem;
+}
+
+.footer-container .footer-icons {
+  font-size: 26px;
+  padding-top: 6rem;
+}
+
+.footer-icons a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-container .trademark {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.35;
+  padding: 2rem 0 0 35.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container .trademark {
+    padding: 2rem 0 0 21rem;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container .footer-logo {
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .footer-container .footer-icons {
+    margin: 0;
+    padding-top: 1rem;
+  }
+
+  .footer-container .trademark {
+    padding: 0;
+    padding-top: 1rem;
+  }
+}
+
+/* Pircing page
+        ============================ */
+
+.principal-section {
+  background-image: url("images/pic_2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #d8d8d8;
+  max-width: 100%;
+  height: 1100px;
+}
+
+.container-pircing {
+  color: #ffffff;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 5rem 0;
+}
+
+.container-pircing .title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container .title {
+  font-size: 30px;
+  font-weight: 200;
+  margin: 5rem 1rem 5rem 0.3rem;
+}
+
+.title-container img {
+  margin: 5rem 0.5rem 5rem 0;
+}
+
+.subtitle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle-container .title {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 3rem;
+}
+
+.table-pircing .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons .button1 {
+  width: 180px;
+  height: 40px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  background-color: #c271ff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  margin: 0 15rem 0 26rem;
+}
+
+.buttons .button2 {
+  width: 180px;
+  height: 40px;
+  border-radius: 22px;
+  border: 0;
+  color: #ffffff;
+  background-color: #c271ff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.table-pircing .price {
+  display: flex;
+  justify-content: center;
+}
+
+.price .price1 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 3rem 20rem 0 26rem;
+  text-align: center;
+}
+
+.price .price2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 3rem 0 0 0;
+  text-align: center;
+}
+
+.price span {
+  font-size: 10px;
+  opacity: 50%;
+  margin: 0;
+}
+
+.table-pircing .table {
+  color: #ffffff;
+  width: 850px;
+}
+
+.table hr {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+#w {
+  color: green;
+}
+
+/* FAQ section
+        ============================ */
+
+.faq {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #ffffff;
+  max-width: 100%;
+  height: 700px;
+}
+
+.faq .faq-title {
+  margin: 15rem 0 5rem 0;
+  text-align: center;
+}
+
+.faq-title h2 {
+  font-weight: 200;
+  font-size: 55px;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.faq-container .faq-information {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 245px;
+  margin: 0 5rem 0 5rem;
+}
+
+.faq-information .title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.faq-information .information {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+/* Courses page
+        ============================ */
+
+.principal-section-courses {
+  background-image: url("images/pic_3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #d8d8d8;
+  max-width: 100%;
+  height: 215px;
+}
+
+.main-courses {
+  color: #ffffff;
+}
+
+.title-courses-div {
+  display: flex;
+  justify-content: center;
+}
+
+.title-courses {
+  font-weight: 400;
+  font-size: 32px;
+  font-family: Coiny;
+}
+
+.title-courses .smile {
+  color: #c271ff;
+}
+
+.search-filters {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #c271ff;
+  max-width: 100%;
+  height: 215px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filters .subtitle {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 3rem 0 0.5rem 0;
+}
